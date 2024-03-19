@@ -53,7 +53,7 @@ def dictionary_dataframe_to_xml(df, file_name):
             os.remove(output_path)
 
         tree.write(output_path, encoding="utf-8", xml_declaration=True)
-        result = f"Saved file: {file_name}.xml in {XML_FILE_PATH}"
+        result = f"Saved file: {file_name} in {XML_FILE_PATH}"
         return print(result)
 
 
