@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tables><table>DIM_ASSOCIATE_AGGREGATION_SNAPSHOT_TBL: Contains associate data from LMX service. Agregated table to recreate the table on a specific point in time.<columns><column>SNAPSHOT_DATE: Table snapshot generated date.<datatype>DATE</datatype><notes /></column></columns></table></tables>
