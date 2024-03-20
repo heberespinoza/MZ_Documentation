@@ -14,7 +14,13 @@ def create_table_element(table, table_description):
 def create_column_element(column, column_description, datatype, notes):
     # Create column element
     column_elem = Et.Element("column")
-    column_elem.text = f"{column}: {column_description}"
+    # column_elem.text = f"{column}: {column_description}"
+
+    datatype_elem = Et.SubElement(column_elem, "column")
+    datatype_elem.text = column
+
+    datatype_elem = Et.SubElement(column_elem, "column_description")
+    datatype_elem.text = column_description
 
     # Create datatype element
     datatype_elem = Et.SubElement(column_elem, "datatype")
